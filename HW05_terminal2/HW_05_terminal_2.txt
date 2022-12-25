@@ -90,34 +90,34 @@ D:\Testing\hw_2
 	find . -type f -iname '*tf*'
 
 "23. Найти строки в файлах где есть комбинация букв “sec” в текущей папке ->"
-	grep -r 'sec' .
+	grep -r --exclude-dir=inner_dir_1 'sec' .
 
 "24. Найти строки в файлах где есть комбинация букв “sec” в любом регистре в текущей папке ->"
-	grep -ir 'sec' .
+	grep -ir --exclude-dir=inner_dir_1 'sec' .
 
 "25. Найти строки в файлах где есть только комбинация букв “sec” в текущей папке ->"
-	grep -wr 'sec' .
+	grep -wr --exclude-dir=inner_dir_1 'sec' .
 
 "26. Найти строки в файлах где есть только комбинация букв “sec” в любом регистре в текущей папке ->"
-	grep -iwr 'sec' .
+	grep -iwr --exclude-dir=inner_dir_1 'sec' .
 
 "27. Найти строки в файлах где есть комбинация букв “second” в текущей папке ->"
-	grep -r 'second' .
+	grep -r --exclude-dir=inner_dir_1 'second' .
 
 "28. Найти строки в файлах где есть комбинация букв “second” в любом регистре в текущей папке ->"
-	grep -ir 'second' .
+	grep -ir --exclude-dir=inner_dir_1 'second' .
 
 "29. Найти строки в файлах где есть комбинация букв “second” во всех папках ниже уровнем ->"
 	grep -r 'second' */.
 
 "30. Найти только путь и название файла в строках которых есть комбинация букв “second” в текущей папке ->"
-	grep -lr 'second' .
+	grep -lr --exclude-dir=inner_dir_1 'second' .
 
 "31. Найти все строки во всех файлах где нет комбинации “second” ->"
-	grep -vr 'second' ./
+	grep -vr 'second' .
 
 "32. Найти только название и путь к файлам где нет комбинации “second” ->"
-	grep -vlr 'second' ./
+	grep -vlr 'second' .
 
 "33. Вывести в терминал 4 последних строк любого текстового файла ->"
 	tail -n4 ./inner_dir_1/tF_5.txt
@@ -132,7 +132,7 @@ D:\Testing\hw_2
 	grep -lr 'sec' | xargs mv -t new 
 
 "37. Команда в одну строку. Скопировать в любую одну папку текстовые файлы у которых в содержимом есть слово “sec” ->"
-	grep -lr 'sec' | xargs cp ./
+	grep -lr 'sec' | xargs cp .
 
 "38. Команда в одну строку. Найти все строки c “sec” во всех текстовых файлах, скопировать и вставить эти строки в один новый созданный текстовый файл. ->"
 	grep -lr "sec" | xargs cat >> all_sec.txt
