@@ -1,0 +1,3 @@
+### Homework_2
+Задание: Написать чек-лист проверок для приложения [Bitcoin & Crypto Price Widget](https://play.google.com/store/apps/details?id=com.currency.exchange.widgetscrypto&hl=en&gl=US), проверить приложение, оформить баг-репорты на найденые баги  
+Готовое домашнее задание можно посмотреть [сдесь](https://docs.google.com/spreadsheets/d/1-z-NQgh-rOIGhAM4SskDU6Dvb1UwQC4YHckaqE8Y81I/edit?usp=sharing)
