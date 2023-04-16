@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE charles-session SYSTEM "https://www.charlesproxy.com/dtd/charles-session-1_2.dtd">
+
+<charles-session>
+<transaction status="COMPLETE" method="GET" protocolVersion="HTTP/1.1" protocol="http" host="162.55.220.72" port="5005" actualPort="5005" path="/get_method" query="name=Tim&amp;age=37" remoteAddress="162.55.220.72/162.55.220.72" clientAddress="/127.0.0.1" clientPort="58933" startTime="2023-04-16T10:27:48.927+03:00" startTimeMillis="1681630068927" requestBeginTime="2023-04-16T10:27:48.977+03:00" requestBeginTimeMillis="1681630068977" requestTime="2023-04-16T10:27:48.977+03:00" requestTimeMillis="1681630068977" responseTime="2023-04-16T10:27:49.033+03:00" responseTimeMillis="1681630069033" endTime="2023-04-16T10:27:49.033+03:00" endTimeMillis="1681630069033" duration="105" dnsDuration="0" connectDuration="49" requestDuration="0" responseDuration="0" latency="56" overallSpeed="3980" requestSpeed="0" responseSpeed="0" totalSize="418">
+<request headers="231" body="0">
+<headers>
+<first-line><![CDATA[GET /get_method?name=Tim&age=37 HTTP/1.1]]></first-line>
+<header>
+<name>User-Agent</name>
+<value>PostmanRuntime/7.32.2</value></header>
+<header>
+<name>Accept</name>
+<value>*/*</value></header>
+<header>
+<name>Postman-Token</name>
+<value>1e769c1e-6603-441c-82ec-ef4d0dd3b596</value></header>
+<header>
+<name>Host</name>
+<value>162.55.220.72:5005</value></header>
+<header>
+<name>Accept-Encoding</name>
+<value>gzip, deflate, br</value></header>
+<header>
+<name>Connection</name>
+<value>keep-alive</value></header></headers></request>
+<response status="200" headers="166" body="21" mime-type="application/json">
+<headers>
+<first-line><![CDATA[HTTP/1.0 200 OK]]></first-line>
+<header>
+<name>Content-Type</name>
+<value>application/json</value></header>
+<header>
+<name>Content-Length</name>
+<value>25</value></header>
+<header>
+<name>Server</name>
+<value>Werkzeug/2.0.1 Python/3.8.10</value></header>
+<header>
+<name>Date</name>
+<value>Sun, 16 Apr 2023 07:27:50 GMT</value></header>
+<header>
+<name>Connection</name>
+<value>close</value></header></headers>
+<body><![CDATA[[
+  "Timofey", 
+  "37"
+]
+]]></body></response></transaction>
+<transaction status="COMPLETE" method="POST" protocolVersion="HTTP/1.1" protocol="http" host="162.55.220.72" port="5005" actualPort="5005" path="/user_info_3" remoteAddress="162.55.220.72/162.55.220.72" clientAddress="/127.0.0.1" clientPort="58940" startTime="2023-04-16T10:28:31.191+03:00" startTimeMillis="1681630111191" requestBeginTime="2023-04-16T10:28:31.241+03:00" requestBeginTimeMillis="1681630111241" requestTime="2023-04-16T10:28:31.241+03:00" requestTimeMillis="1681630111241" responseTime="2023-04-16T10:28:31.297+03:00" responseTimeMillis="1681630111297" endTime="2023-04-16T10:28:31.298+03:00" endTimeMillis="1681630111298" duration="106" dnsDuration="0" connectDuration="49" requestDuration="0" responseDuration="1" latency="56" overallSpeed="11339" requestSpeed="0" responseSpeed="493000" totalSize="1202">
+<request headers="334" body="375" mime-type="multipart/form-data">
+<headers>
+<first-line><![CDATA[POST /user_info_3 HTTP/1.1]]></first-line>
+<header>
+<name>User-Agent</name>
+<value>PostmanRuntime/7.32.2</value></header>
+<header>
+<name>Accept</name>
+<value>*/*</value></header>
+<header>
+<name>Postman-Token</name>
+<value>94fa97c9-cffd-4724-be4e-bddcb03f7e31</value></header>
+<header>
+<name>Host</name>
+<value>162.55.220.72:5005</value></header>
+<header>
+<name>Accept-Encoding</name>
+<value>gzip, deflate, br</value></header>
+<header>
+<name>Content-Type</name>
+<value>multipart/form-data; boundary=--------------------------589729608832430443820760</value></header>
+<header>
+<name>Content-Length</name>
+<value>375</value></header>
+<header>
+<name>Connection</name>
+<value>keep-alive</value></header></headers>
+<body><![CDATA[----------------------------589729608832430443820760
+Content-Disposition: form-data; name="name"
+
+Tim
+----------------------------589729608832430443820760
+Content-Disposition: form-data; name="age"
+
+37
+----------------------------589729608832430443820760
+Content-Disposition: form-data; name="salary"
+
+2000
+----------------------------589729608832430443820760--
+]]></body></request>
+<response status="200" headers="272" body="221" mime-type="application/json">
+<headers>
+<first-line><![CDATA[HTTP/1.0 200 OK]]></first-line>
+<header>
+<name>Content-Type</name>
+<value>application/json</value></header>
+<header>
+<name>Content-Length</name>
+<value>221</value></header>
+<header>
+<name>Server</name>
+<value>Werkzeug/2.0.1 Python/3.8.10</value></header>
+<header>
+<name>Date</name>
+<value>Sun, 16 Apr 2023 07:28:32 GMT</value></header>
+<header>
+<name>Connection</name>
+<value>close</value></header></headers>
+<body><![CDATA[{
+  "age": "37", 
+  "family": {
+    "children": [
+      [
+        "Alex", 
+        24
+      ], 
+      [
+        "Kate", 
+        12
+      ]
+    ], 
+    "u_salary_1_5_year": 5000
+  }, 
+  "name": "Tim", 
+  "salary": 2000
+}
+]]></body></response></transaction>
+<transaction status="COMPLETE" method="GET" protocolVersion="HTTP/1.1" protocol="http" host="162.55.220.72" port="5005" actualPort="5005" path="/object_info_1" query="name=Tim&amp;age=37&amp;weight=62" remoteAddress="162.55.220.72/162.55.220.72" clientAddress="/127.0.0.1" clientPort="58957" startTime="2023-04-16T10:29:35.854+03:00" startTimeMillis="1681630175854" requestBeginTime="2023-04-16T10:29:35.908+03:00" requestBeginTimeMillis="1681630175908" requestTime="2023-04-16T10:29:35.908+03:00" requestTimeMillis="1681630175908" responseTime="2023-04-16T10:29:35.967+03:00" responseTimeMillis="1681630175967" endTime="2023-04-16T10:29:35.967+03:00" endTimeMillis="1681630175967" duration="111" dnsDuration="0" connectDuration="52" requestDuration="0" responseDuration="0" latency="59" overallSpeed="5000" requestSpeed="0" responseSpeed="0" totalSize="555">
+<request headers="244" body="0">
+<headers>
+<first-line><![CDATA[GET /object_info_1?name=Tim&age=37&weight=62 HTTP/1.1]]></first-line>
+<header>
+<name>User-Agent</name>
+<value>PostmanRuntime/7.32.2</value></header>
+<header>
+<name>Accept</name>
+<value>*/*</value></header>
+<header>
+<name>Postman-Token</name>
+<value>cac64f8a-894e-4afe-a205-36cc44841055</value></header>
+<header>
+<name>Host</name>
+<value>162.55.220.72:5005</value></header>
+<header>
+<name>Accept-Encoding</name>
+<value>gzip, deflate, br</value></header>
+<header>
+<name>Connection</name>
+<value>keep-alive</value></header></headers></request>
+<response status="200" headers="228" body="83" mime-type="application/json">
+<headers>
+<first-line><![CDATA[HTTP/1.0 200 OK]]></first-line>
+<header>
+<name>Content-Type</name>
+<value>application/json</value></header>
+<header>
+<name>Content-Length</name>
+<value>82</value></header>
+<header>
+<name>Server</name>
+<value>Werkzeug/2.0.1 Python/3.8.10</value></header>
+<header>
+<name>Date</name>
+<value>Sun, 16 Apr 2023 07:29:36 GMT</value></header>
+<header>
+<name>Connection</name>
+<value>close</value></header></headers>
+<body><![CDATA[{
+  "age": 37, 
+  "daily_food": 65, 
+  "daily_sleep": 7.0, 
+  "name": "Timofei"
+}
+]]></body></response></transaction>
+<transaction status="COMPLETE" method="GET" protocolVersion="HTTP/1.1" protocol="http" host="162.55.220.72" port="5005" actualPort="5005" path="/object_info_3" query="name=Tim&amp;age=37&amp;salary=2000" remoteAddress="162.55.220.72/162.55.220.72" clientAddress="/127.0.0.1" clientPort="58962" startTime="2023-04-16T10:30:02.497+03:00" startTimeMillis="1681630202497" requestBeginTime="2023-04-16T10:30:02.550+03:00" requestBeginTimeMillis="1681630202550" requestTime="2023-04-16T10:30:02.550+03:00" requestTimeMillis="1681630202550" responseTime="2023-04-16T10:30:02.609+03:00" responseTimeMillis="1681630202609" endTime="2023-04-16T10:30:02.610+03:00" endTimeMillis="1681630202610" duration="112" dnsDuration="0" connectDuration="52" requestDuration="0" responseDuration="1" latency="59" overallSpeed="7982" requestSpeed="0" responseSpeed="648000" totalSize="894">
+<request headers="246" body="0">
+<headers>
+<first-line><![CDATA[GET /object_info_3?name=Tim&age=37&salary=2000 HTTP/1.1]]></first-line>
+<header>
+<name>User-Agent</name>
+<value>PostmanRuntime/7.32.2</value></header>
+<header>
+<name>Accept</name>
+<value>*/*</value></header>
+<header>
+<name>Postman-Token</name>
+<value>dabe856c-acbf-4283-944f-afe17b17f67d</value></header>
+<header>
+<name>Host</name>
+<value>162.55.220.72:5005</value></header>
+<header>
+<name>Accept-Encoding</name>
+<value>gzip, deflate, br</value></header>
+<header>
+<name>Connection</name>
+<value>keep-alive</value></header></headers></request>
+<response status="500" headers="272" body="376" mime-type="application/json">
+<headers>
+<first-line><![CDATA[HTTP/1.0 500 Internal Server Error]]></first-line>
+<header>
+<name>Content-Type</name>
+<value>application/json</value></header>
+<header>
+<name>Content-Length</name>
+<value>376</value></header>
+<header>
+<name>Server</name>
+<value>Werkzeug/2.0.1 Python/3.8.10</value></header>
+<header>
+<name>Date</name>
+<value>Sun, 16 Apr 2023 07:30:03 GMT</value></header>
+<header>
+<name>Connection</name>
+<value>close</value></header></headers>
+<body><![CDATA[{
+  "age": "37", 
+  "family": {
+    "children": [
+      [
+        "Alex", 
+        24
+      ], 
+      [
+        "Kate", 
+        12
+      ]
+    ], 
+    "pets": {
+      "cat": {
+        "age": 3, 
+        "name": "Sunny"
+      }, 
+      "dog": {
+        "age": 4, 
+        "name": "Luky"
+      }
+    }, 
+    "u_salary_1_5_year": 8000
+  }, 
+  "name": "Tim", 
+  "salary": 2000
+}
+]]></body></response></transaction>
+<transaction status="COMPLETE" method="GET" protocolVersion="HTTP/1.1" protocol="http" host="162.55.220.72" port="5005" actualPort="5005" path="/object_info_3" query="name=Tim&amp;age=37&amp;salary=2000" remoteAddress="162.55.220.72/162.55.220.72" clientAddress="/127.0.0.1" clientPort="58967" startTime="2023-04-16T10:30:20.308+03:00" startTimeMillis="1681630220308" requestBeginTime="2023-04-16T10:30:20.359+03:00" requestBeginTimeMillis="1681630220359" requestTime="2023-04-16T10:30:20.359+03:00" requestTimeMillis="1681630220359" responseTime="2023-04-16T10:30:20.412+03:00" responseTimeMillis="1681630220412" endTime="2023-04-16T10:30:20.412+03:00" endTimeMillis="1681630220412" duration="104" dnsDuration="0" connectDuration="51" requestDuration="0" responseDuration="0" latency="53" overallSpeed="8596" requestSpeed="0" responseSpeed="0" totalSize="894">
+<request headers="246" body="0">
+<headers>
+<first-line><![CDATA[GET /object_info_3?name=Tim&age=37&salary=2000 HTTP/1.1]]></first-line>
+<header>
+<name>User-Agent</name>
+<value>PostmanRuntime/7.32.2</value></header>
+<header>
+<name>Accept</name>
+<value>*/*</value></header>
+<header>
+<name>Postman-Token</name>
+<value>cb588a86-3de0-4099-a47c-91c555c66485</value></header>
+<header>
+<name>Host</name>
+<value>162.55.220.72:5005</value></header>
+<header>
+<name>Accept-Encoding</name>
+<value>gzip, deflate, br</value></header>
+<header>
+<name>Connection</name>
+<value>keep-alive</value></header></headers></request>
+<response status="405" headers="272" body="376" mime-type="application/json">
+<headers>
+<first-line><![CDATA[HTTP/1.0 405 Method Not Allowed]]></first-line>
+<header>
+<name>Content-Type</name>
+<value>application/json</value></header>
+<header>
+<name>Content-Length</name>
+<value>376</value></header>
+<header>
+<name>Server</name>
+<value>Werkzeug/2.0.1 Python/3.8.10</value></header>
+<header>
+<name>Date</name>
+<value>Sun, 16 Apr 2023 07:30:21 GMT</value></header>
+<header>
+<name>Connection</name>
+<value>close</value></header></headers>
+<body><![CDATA[{
+  "age": "37", 
+  "family": {
+    "children": [
+      [
+        "Alex", 
+        24
+      ], 
+      [
+        "Kate", 
+        12
+      ]
+    ], 
+    "pets": {
+      "cat": {
+        "age": 3, 
+        "name": "Sunny"
+      }, 
+      "dog": {
+        "age": 4, 
+        "name": "Luky"
+      }
+    }, 
+    "u_salary_1_5_year": 8000
+  }, 
+  "name": "Tim", 
+  "salary": 2000
+}
+]]></body></response></transaction>
+<transaction status="COMPLETE" method="GET" protocolVersion="HTTP/1.1" protocol="http" host="162.55.220.72" port="5005" actualPort="5005" path="/object_info_4" query="name=Tim&amp;age=37&amp;salary=2000" remoteAddress="162.55.220.72/162.55.220.72" clientAddress="/127.0.0.1" clientPort="58973" startTime="2023-04-16T10:30:45.932+03:00" startTimeMillis="1681630245932" requestBeginTime="2023-04-16T10:30:46.139+03:00" requestBeginTimeMillis="1681630246139" requestTime="2023-04-16T10:30:46.139+03:00" requestTimeMillis="1681630246139" responseTime="2023-04-16T10:30:46.296+03:00" responseTimeMillis="1681630246296" endTime="2023-04-16T10:30:46.296+03:00" endTimeMillis="1681630246296" duration="357" dnsDuration="0" connectDuration="200" requestDuration="0" responseDuration="0" latency="157" overallSpeed="1593" requestSpeed="0" responseSpeed="0" totalSize="569">
+<request headers="246" body="0">
+<headers>
+<first-line><![CDATA[GET /object_info_4?name=Tim&age=37&salary=2000 HTTP/1.1]]></first-line>
+<header>
+<name>User-Agent</name>
+<value>PostmanRuntime/7.32.2</value></header>
+<header>
+<name>Accept</name>
+<value>*/*</value></header>
+<header>
+<name>Postman-Token</name>
+<value>59dc4f9d-b4ca-43f2-b9b7-7eb4495be185</value></header>
+<header>
+<name>Host</name>
+<value>162.55.220.72:5005</value></header>
+<header>
+<name>Accept-Encoding</name>
+<value>gzip, deflate, br</value></header>
+<header>
+<name>Connection</name>
+<value>keep-alive</value></header></headers></request>
+<response status="405" headers="234" body="89" mime-type="application/json">
+<headers>
+<first-line><![CDATA[HTTP/1.0 405 Method Not Allowed]]></first-line>
+<header>
+<name>Content-Type</name>
+<value>application/json</value></header>
+<header>
+<name>Content-Length</name>
+<value>89</value></header>
+<header>
+<name>Server</name>
+<value>Werkzeug/2.0.1 Python/3.8.10</value></header>
+<header>
+<name>Date</name>
+<value>Sun, 16 Apr 2023 07:30:47 GMT</value></header>
+<header>
+<name>Connection</name>
+<value>close</value></header></headers>
+<body><![CDATA[{
+  "age": 37, 
+  "name": "Tim", 
+  "salary": [
+    2000, 
+    "8000", 
+    "6000"
+  ]
+}
+]]></body></response></transaction>
+<transaction status="COMPLETE" method="POST" protocolVersion="HTTP/1.1" protocol="http" host="162.55.220.72" port="5005" actualPort="5005" path="/user_info_2" remoteAddress="162.55.220.72/162.55.220.72" clientAddress="/127.0.0.1" clientPort="58995" startTime="2023-04-16T10:31:35.337+03:00" startTimeMillis="1681630295337" requestBeginTime="2023-04-16T10:31:35.392+03:00" requestBeginTimeMillis="1681630295392" requestTime="2023-04-16T10:31:35.392+03:00" requestTimeMillis="1681630295392" responseTime="2023-04-16T10:31:35.735+03:00" responseTimeMillis="1681630295735" endTime="2023-04-16T10:31:35.736+03:00" endTimeMillis="1681630295736" duration="399" dnsDuration="0" connectDuration="55" requestDuration="0" responseDuration="1" latency="343" overallSpeed="3248" requestSpeed="0" responseSpeed="587000" totalSize="1296">
+<request headers="334" body="375" mime-type="multipart/form-data">
+<headers>
+<first-line><![CDATA[POST /user_info_2 HTTP/1.1]]></first-line>
+<header>
+<name>User-Agent</name>
+<value>PostmanRuntime/7.32.2</value></header>
+<header>
+<name>Accept</name>
+<value>*/*</value></header>
+<header>
+<name>Postman-Token</name>
+<value>27d16fb4-d4a3-47c8-8594-7b317220bcd4</value></header>
+<header>
+<name>Host</name>
+<value>162.55.220.72:5005</value></header>
+<header>
+<name>Accept-Encoding</name>
+<value>gzip, deflate, br</value></header>
+<header>
+<name>Content-Type</name>
+<value>multipart/form-data; boundary=--------------------------610878406837457736762927</value></header>
+<header>
+<name>Content-Length</name>
+<value>375</value></header>
+<header>
+<name>Connection</name>
+<value>keep-alive</value></header></headers>
+<body><![CDATA[----------------------------610878406837457736762927
+Content-Disposition: form-data; name="name"
+
+Tim
+----------------------------610878406837457736762927
+Content-Disposition: form-data; name="age"
+
+37
+----------------------------610878406837457736762927
+Content-Disposition: form-data; name="salary"
+
+2000
+----------------------------610878406837457736762927--
+]]></body></request>
+<response status="200" headers="272" body="315" mime-type="application/json">
+<headers>
+<first-line><![CDATA[HTTP/1.0 200 OK]]></first-line>
+<header>
+<name>Content-Type</name>
+<value>application/json</value></header>
+<header>
+<name>Content-Length</name>
+<value>316</value></header>
+<header>
+<name>Server</name>
+<value>Werkzeug/2.0.1 Python/3.8.10</value></header>
+<header>
+<name>Date</name>
+<value>Sun, 16 Apr 2023 07:31:36 GMT</value></header>
+<header>
+<name>Connection</name>
+<value>close</value></header></headers>
+<body><![CDATA[{
+  "person": {
+    "u_age": 37, 
+    "u_name": [
+      "Tim", 
+      2000, 
+      37
+    ], 
+    "u_salary_5_years": 8400.0
+  }, 
+  "qa_salary_after_1.5_month": 6600.0, 
+  "qa_salary_after_12_months": 5400.0, 
+  "qa_salary_after_3.5_years": 3700.0, 
+  "qa_salary_after_6_months": 4000, 
+  "start_qa_salary": 2000
+}
+]]></body></response></transaction>
+<transaction status="COMPLETE" method="GET" protocolVersion="HTTP/1.1" protocol="http" host="162.55.220.72" port="5005" actualPort="5005" path="/get_method" query="name=Tim&amp;age=37" remoteAddress="162.55.220.72/162.55.220.72" clientAddress="/127.0.0.1" clientPort="59093" startTime="2023-04-16T10:35:43.992+03:00" startTimeMillis="1681630543992" requestBeginTime="2023-04-16T10:35:44.043+03:00" requestBeginTimeMillis="1681630544043" requestTime="2023-04-16T10:35:44.043+03:00" requestTimeMillis="1681630544043" responseTime="2023-04-16T10:35:44.100+03:00" responseTimeMillis="1681630544100" endTime="2023-04-16T10:35:44.101+03:00" endTimeMillis="1681630544101" duration="108" dnsDuration="0" connectDuration="50" requestDuration="0" responseDuration="1" latency="57" overallSpeed="3870" requestSpeed="0" responseSpeed="187000" totalSize="418">
+<request headers="231" body="0">
+<headers>
+<first-line><![CDATA[GET /get_method?name=Tim&age=37 HTTP/1.1]]></first-line>
+<header>
+<name>User-Agent</name>
+<value>PostmanRuntime/7.32.2</value></header>
+<header>
+<name>Accept</name>
+<value>*/*</value></header>
+<header>
+<name>Postman-Token</name>
+<value>9d9eab85-9e69-4204-b183-a6e468ca14f1</value></header>
+<header>
+<name>Host</name>
+<value>162.55.220.72:5005</value></header>
+<header>
+<name>Accept-Encoding</name>
+<value>gzip, deflate, br</value></header>
+<header>
+<name>Connection</name>
+<value>keep-alive</value></header></headers></request>
+<response status="200" headers="166" body="21" mime-type="application/json">
+<headers>
+<first-line><![CDATA[HTTP/1.0 200 OK]]></first-line>
+<header>
+<name>Content-Type</name>
+<value>application/json</value></header>
+<header>
+<name>Server</name>
+<value>Werkzeug/2.0.1 Python/3.8.10</value></header>
+<header>
+<name>Date</name>
+<value>Sun, 16 Apr 2023 07:35:45 GMT</value></header>
+<header>
+<name>Content-Length</name>
+<value>22</value></header>
+<header>
+<name>Connection</name>
+<value>close</value></header></headers>
+<body><![CDATA[[
+	"Timofey",
+	"37"]]]></body></response></transaction>
+<transaction status="COMPLETE" method="POST" protocolVersion="HTTP/1.1" protocol="http" host="162.55.220.72" port="5005" actualPort="5005" path="/user_info_3" remoteAddress="162.55.220.72/162.55.220.72" clientAddress="/127.0.0.1" clientPort="59142" startTime="2023-04-16T10:36:27.550+03:00" startTimeMillis="1681630587550" requestBeginTime="2023-04-16T10:36:27.604+03:00" requestBeginTimeMillis="1681630587604" requestTime="2023-04-16T10:36:27.604+03:00" requestTimeMillis="1681630587604" responseTime="2023-04-16T10:36:27.670+03:00" responseTimeMillis="1681630587670" endTime="2023-04-16T10:36:27.671+03:00" endTimeMillis="1681630587671" duration="121" dnsDuration="0" connectDuration="54" requestDuration="0" responseDuration="1" latency="66" overallSpeed="9933" requestSpeed="0" responseSpeed="493000" totalSize="1202">
+<request headers="334" body="375" mime-type="multipart/form-data">
+<headers>
+<first-line><![CDATA[POST /user_info_3 HTTP/1.1]]></first-line>
+<header>
+<name>User-Agent</name>
+<value>PostmanRuntime/7.32.2</value></header>
+<header>
+<name>Accept</name>
+<value>*/*</value></header>
+<header>
+<name>Postman-Token</name>
+<value>9cc1c2f6-d082-4ed2-9748-1c42e8abc602</value></header>
+<header>
+<name>Host</name>
+<value>162.55.220.72:5005</value></header>
+<header>
+<name>Accept-Encoding</name>
+<value>gzip, deflate, br</value></header>
+<header>
+<name>Content-Type</name>
+<value>multipart/form-data; boundary=--------------------------411836961967306279048329</value></header>
+<header>
+<name>Content-Length</name>
+<value>375</value></header>
+<header>
+<name>Connection</name>
+<value>keep-alive</value></header></headers>
+<body><![CDATA[----------------------------411836961967306279048329
+Content-Disposition: form-data; name="name"
+
+Tim
+----------------------------411836961967306279048329
+Content-Disposition: form-data; name="age"
+
+37
+----------------------------411836961967306279048329
+Content-Disposition: form-data; name="salary"
+
+2000
+----------------------------411836961967306279048329--
+]]></body></request>
+<response status="200" headers="272" body="221" mime-type="application/json">
+<headers>
+<first-line><![CDATA[HTTP/1.0 200 OK]]></first-line>
+<header>
+<name>Content-Type</name>
+<value>application/json</value></header>
+<header>
+<name>Server</name>
+<value>Werkzeug/2.0.1 Python/3.8.10</value></header>
+<header>
+<name>Date</name>
+<value>Sun, 16 Apr 2023 07:36:28 GMT</value></header>
+<header>
+<name>Content-Length</name>
+<value>179</value></header>
+<header>
+<name>Connection</name>
+<value>close</value></header></headers>
+<body><![CDATA[{
+	"age": "37",
+	"family": {
+		"children": [
+			[
+				"Alex",
+			24],
+			[
+				"Kate",
+			12]
+		],
+		"u_salary_1_5_year": 5000
+	},
+	"name": "Tim",
+	"salary": 2000
+}]]></body></response></transaction>
+<transaction status="COMPLETE" method="GET" protocolVersion="HTTP/1.1" protocol="http" host="162.55.220.72" port="5005" actualPort="5005" path="/object_info_1" query="name=Tim&amp;age=37&amp;weight=62" remoteAddress="162.55.220.72/162.55.220.72" clientAddress="/127.0.0.1" clientPort="59168" startTime="2023-04-16T10:37:42.344+03:00" startTimeMillis="1681630662344" requestBeginTime="2023-04-16T10:37:42.398+03:00" requestBeginTimeMillis="1681630662398" requestTime="2023-04-16T10:37:42.398+03:00" requestTimeMillis="1681630662398" responseTime="2023-04-16T10:37:42.455+03:00" responseTimeMillis="1681630662455" endTime="2023-04-16T10:37:42.456+03:00" endTimeMillis="1681630662456" duration="112" dnsDuration="0" connectDuration="54" requestDuration="0" responseDuration="1" latency="57" overallSpeed="4955" requestSpeed="0" responseSpeed="311000" totalSize="555">
+<request headers="244" body="0">
+<headers>
+<first-line><![CDATA[GET /object_info_1?name=Tim&age=37&weight=62 HTTP/1.1]]></first-line>
+<header>
+<name>User-Agent</name>
+<value>PostmanRuntime/7.32.2</value></header>
+<header>
+<name>Accept</name>
+<value>*/*</value></header>
+<header>
+<name>Postman-Token</name>
+<value>01110c34-840c-4243-aaf9-f927a5fd059e</value></header>
+<header>
+<name>Host</name>
+<value>162.55.220.72:5005</value></header>
+<header>
+<name>Accept-Encoding</name>
+<value>gzip, deflate, br</value></header>
+<header>
+<name>Connection</name>
+<value>keep-alive</value></header></headers></request>
+<response status="200" headers="228" body="83" mime-type="application/json">
+<headers>
+<first-line><![CDATA[HTTP/1.0 200 OK]]></first-line>
+<header>
+<name>Content-Type</name>
+<value>application/json</value></header>
+<header>
+<name>Server</name>
+<value>Werkzeug/2.0.1 Python/3.8.10</value></header>
+<header>
+<name>Date</name>
+<value>Sun, 16 Apr 2023 07:37:43 GMT</value></header>
+<header>
+<name>Content-Length</name>
+<value>79</value></header>
+<header>
+<name>Connection</name>
+<value>close</value></header></headers>
+<body><![CDATA[{
+	"age": 37,
+	"daily_food": 63,
+	"daily_sleep": 9.0,
+	"name": "Timofey"
+}]]></body></response></transaction>
+<transaction status="COMPLETE" method="GET" protocolVersion="HTTP/1.1" protocol="http" host="162.55.220.72" port="5005" actualPort="5005" path="/object_info_3" query="name=Tim&amp;age=37&amp;salary=2000" remoteAddress="162.55.220.72/162.55.220.72" clientAddress="/127.0.0.1" clientPort="59301" startTime="2023-04-16T10:39:36.984+03:00" startTimeMillis="1681630776984" requestBeginTime="2023-04-16T10:39:37.039+03:00" requestBeginTimeMillis="1681630777039" requestTime="2023-04-16T10:39:37.039+03:00" requestTimeMillis="1681630777039" responseTime="2023-04-16T10:39:37.092+03:00" responseTimeMillis="1681630777092" endTime="2023-04-16T10:39:37.093+03:00" endTimeMillis="1681630777093" duration="109" dnsDuration="0" connectDuration="55" requestDuration="0" responseDuration="1" latency="53" overallSpeed="8201" requestSpeed="0" responseSpeed="648000" totalSize="894">
+<request headers="246" body="0">
+<headers>
+<first-line><![CDATA[GET /object_info_3?name=Tim&age=37&salary=2000 HTTP/1.1]]></first-line>
+<header>
+<name>User-Agent</name>
+<value>PostmanRuntime/7.32.2</value></header>
+<header>
+<name>Accept</name>
+<value>*/*</value></header>
+<header>
+<name>Postman-Token</name>
+<value>1b40c4c1-5a66-4fae-ada3-9f0c40e91ab8</value></header>
+<header>
+<name>Host</name>
+<value>162.55.220.72:5005</value></header>
+<header>
+<name>Accept-Encoding</name>
+<value>gzip, deflate, br</value></header>
+<header>
+<name>Connection</name>
+<value>keep-alive</value></header></headers></request>
+<response status="500" headers="272" body="376" mime-type="application/json">
+<headers>
+<first-line><![CDATA[HTTP/1.0 500 Internal Server Error]]></first-line>
+<header>
+<name>Content-Type</name>
+<value>application/json</value></header>
+<header>
+<name>Content-Length</name>
+<value>376</value></header>
+<header>
+<name>Server</name>
+<value>Werkzeug/2.0.1 Python/3.8.10</value></header>
+<header>
+<name>Date</name>
+<value>Sun, 16 Apr 2023 07:39:38 GMT</value></header>
+<header>
+<name>Connection</name>
+<value>close</value></header></headers>
+<body><![CDATA[{
+  "age": "37", 
+  "family": {
+    "children": [
+      [
+        "Alex", 
+        24
+      ], 
+      [
+        "Kate", 
+        12
+      ]
+    ], 
+    "pets": {
+      "cat": {
+        "age": 3, 
+        "name": "Sunny"
+      }, 
+      "dog": {
+        "age": 4, 
+        "name": "Luky"
+      }
+    }, 
+    "u_salary_1_5_year": 8000
+  }, 
+  "name": "Tim", 
+  "salary": 2000
+}
+]]></body></response></transaction>
+<transaction status="COMPLETE" method="GET" protocolVersion="HTTP/1.1" protocol="http" host="162.55.220.72" port="5005" actualPort="5005" path="/object_info_3" query="name=Tim&amp;age=37&amp;salary=2000" remoteAddress="162.55.220.72/162.55.220.72" clientAddress="/127.0.0.1" clientPort="59317" startTime="2023-04-16T10:40:17.483+03:00" startTimeMillis="1681630817483" requestBeginTime="2023-04-16T10:40:17.538+03:00" requestBeginTimeMillis="1681630817538" requestTime="2023-04-16T10:40:17.538+03:00" requestTimeMillis="1681630817538" responseTime="2023-04-16T10:40:17.596+03:00" responseTimeMillis="1681630817596" endTime="2023-04-16T10:40:17.598+03:00" endTimeMillis="1681630817598" duration="115" dnsDuration="0" connectDuration="55" requestDuration="0" responseDuration="2" latency="58" overallSpeed="7773" requestSpeed="0" responseSpeed="324000" totalSize="894">
+<request headers="246" body="0">
+<headers>
+<first-line><![CDATA[GET /object_info_3?name=Tim&age=37&salary=2000 HTTP/1.1]]></first-line>
+<header>
+<name>User-Agent</name>
+<value>PostmanRuntime/7.32.2</value></header>
+<header>
+<name>Accept</name>
+<value>*/*</value></header>
+<header>
+<name>Postman-Token</name>
+<value>bae9ca19-ea4e-48c4-bffa-ade75a251c07</value></header>
+<header>
+<name>Host</name>
+<value>162.55.220.72:5005</value></header>
+<header>
+<name>Accept-Encoding</name>
+<value>gzip, deflate, br</value></header>
+<header>
+<name>Connection</name>
+<value>keep-alive</value></header></headers></request>
+<response status="405" headers="272" body="376" mime-type="application/json">
+<headers>
+<first-line><![CDATA[HTTP/1.0 405 Method Not Allowed]]></first-line>
+<header>
+<name>Content-Type</name>
+<value>application/json</value></header>
+<header>
+<name>Content-Length</name>
+<value>376</value></header>
+<header>
+<name>Server</name>
+<value>Werkzeug/2.0.1 Python/3.8.10</value></header>
+<header>
+<name>Date</name>
+<value>Sun, 16 Apr 2023 07:40:18 GMT</value></header>
+<header>
+<name>Connection</name>
+<value>close</value></header></headers>
+<body><![CDATA[{
+  "age": "37", 
+  "family": {
+    "children": [
+      [
+        "Alex", 
+        24
+      ], 
+      [
+        "Kate", 
+        12
+      ]
+    ], 
+    "pets": {
+      "cat": {
+        "age": 3, 
+        "name": "Sunny"
+      }, 
+      "dog": {
+        "age": 4, 
+        "name": "Luky"
+      }
+    }, 
+    "u_salary_1_5_year": 8000
+  }, 
+  "name": "Tim", 
+  "salary": 2000
+}
+]]></body></response></transaction>
+<transaction status="COMPLETE" method="GET" protocolVersion="HTTP/1.1" protocol="http" host="162.55.220.72" port="5005" actualPort="5005" path="/object_info_4" query="name=Tim&amp;age=37&amp;salary=4000" remoteAddress="162.55.220.72/162.55.220.72" clientAddress="/127.0.0.1" clientPort="59350" startTime="2023-04-16T10:41:13.846+03:00" startTimeMillis="1681630873846" requestBeginTime="2023-04-16T10:41:44.388+03:00" requestBeginTimeMillis="1681630904388" requestTime="2023-04-16T10:41:44.388+03:00" requestTimeMillis="1681630904388" responseTime="2023-04-16T10:41:44.445+03:00" responseTimeMillis="1681630904445" endTime="2023-04-16T10:41:44.446+03:00" endTimeMillis="1681630904446" duration="112" dnsDuration="0" connectDuration="54" requestDuration="0" responseDuration="1" latency="57" overallSpeed="5098" requestSpeed="0" responseSpeed="325000" totalSize="571">
+<request headers="246" body="0">
+<headers>
+<first-line><![CDATA[GET /object_info_4?name=Tim&age=37&salary=4000 HTTP/1.1]]></first-line>
+<header>
+<name>User-Agent</name>
+<value>PostmanRuntime/7.32.2</value></header>
+<header>
+<name>Accept</name>
+<value>*/*</value></header>
+<header>
+<name>Postman-Token</name>
+<value>b051e4d1-7fc7-45ee-9f66-fa1217ca53b8</value></header>
+<header>
+<name>Host</name>
+<value>162.55.220.72:5005</value></header>
+<header>
+<name>Accept-Encoding</name>
+<value>gzip, deflate, br</value></header>
+<header>
+<name>Connection</name>
+<value>keep-alive</value></header></headers></request>
+<response status="405" headers="235" body="90" mime-type="application/json">
+<headers>
+<first-line><![CDATA[HTTP/1.0 405 Method Not Allowed]]></first-line>
+<header>
+<name>Content-Type</name>
+<value>application/json</value></header>
+<header>
+<name>Server</name>
+<value>Werkzeug/2.0.1 Python/3.8.10</value></header>
+<header>
+<name>Date</name>
+<value>Sun, 16 Apr 2023 07:41:45 GMT</value></header>
+<header>
+<name>Content-Length</name>
+<value>79</value></header>
+<header>
+<name>Connection</name>
+<value>close</value></header></headers>
+<body><![CDATA[{
+	"age": 37,
+	"name": "Tim",
+	"salary": [
+	3000,
+		"8000",
+		"12000"]
+}]]></body></response></transaction>
+<transaction status="COMPLETE" method="POST" protocolVersion="HTTP/1.1" protocol="http" host="162.55.220.72" port="5005" actualPort="5005" path="/user_info_2" remoteAddress="162.55.220.72/162.55.220.72" clientAddress="/127.0.0.1" clientPort="59394" startTime="2023-04-16T10:43:08.271+03:00" startTimeMillis="1681630988271" requestBeginTime="2023-04-16T10:43:08.323+03:00" requestBeginTimeMillis="1681630988323" requestTime="2023-04-16T10:43:08.323+03:00" requestTimeMillis="1681630988323" responseTime="2023-04-16T10:43:08.383+03:00" responseTimeMillis="1681630988383" endTime="2023-04-16T10:43:08.385+03:00" endTimeMillis="1681630988385" duration="114" dnsDuration="0" connectDuration="52" requestDuration="0" responseDuration="2" latency="60" overallSpeed="11368" requestSpeed="0" responseSpeed="293500" totalSize="1296">
+<request headers="334" body="375" mime-type="multipart/form-data">
+<headers>
+<first-line><![CDATA[POST /user_info_2 HTTP/1.1]]></first-line>
+<header>
+<name>User-Agent</name>
+<value>PostmanRuntime/7.32.2</value></header>
+<header>
+<name>Accept</name>
+<value>*/*</value></header>
+<header>
+<name>Postman-Token</name>
+<value>0dc9b9c4-1944-4d19-aa77-f175c198ac67</value></header>
+<header>
+<name>Host</name>
+<value>162.55.220.72:5005</value></header>
+<header>
+<name>Accept-Encoding</name>
+<value>gzip, deflate, br</value></header>
+<header>
+<name>Content-Type</name>
+<value>multipart/form-data; boundary=--------------------------597880825185225185110543</value></header>
+<header>
+<name>Content-Length</name>
+<value>375</value></header>
+<header>
+<name>Connection</name>
+<value>keep-alive</value></header></headers>
+<body><![CDATA[----------------------------597880825185225185110543
+Content-Disposition: form-data; name="name"
+
+Tim
+----------------------------597880825185225185110543
+Content-Disposition: form-data; name="age"
+
+37
+----------------------------597880825185225185110543
+Content-Disposition: form-data; name="salary"
+
+2000
+----------------------------597880825185225185110543--
+]]></body></request>
+<response status="200" headers="272" body="315" mime-type="application/json">
+<headers>
+<first-line><![CDATA[HTTP/1.0 200 OK]]></first-line>
+<header>
+<name>Content-Type</name>
+<value>application/json</value></header>
+<header>
+<name>Server</name>
+<value>Werkzeug/2.0.1 Python/3.8.10</value></header>
+<header>
+<name>Date</name>
+<value>Sun, 16 Apr 2023 07:43:09 GMT</value></header>
+<header>
+<name>Content-Length</name>
+<value>291</value></header>
+<header>
+<name>Connection</name>
+<value>close</value></header></headers>
+<body><![CDATA[{
+	"person": {
+		"u_age": 37,
+		"u_name": [
+			"Tim",
+		2000,
+		37],
+		"u_salary_5_years": 8400.0
+	},
+	"qa_salary_after_1.5_month": 6600.0,
+	"qa_salary_after_12_months": 5400.0,
+	"qa_salary_after_3.5_years": 3900.0,
+	"qa_salary_after_6_months": 4000,
+	"start_qa_salary": 2000
+}]]></body></response></transaction></charles-session>
